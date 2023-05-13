@@ -33,11 +33,13 @@ how to start it up
  							/v1/embeddings      to generate embeddings 
 
 building the docker image:
+
 docker build -t elmo-embedding-api .
 
 docker run -p 5001:5001 -v ./model:/app/model -v ./logs:/app/logs elmo-embedding-api
 
-pulling from docker.hub
+pulling from docker.hub:
+
 docker pull peterromanowski/elmo-embedding-api:0.1.4   (use sudo if you get perm issues)
 
 example:
