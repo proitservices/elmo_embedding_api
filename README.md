@@ -35,7 +35,7 @@ how to start it up
 
 
 example:
-#curl -X POST http://localhost:5001/v1/embeddings -H 'Content-Type: application/json' -d "{\"input\": [\"some text\",\"some more interesting text\",\"additional context\"]}"
+#curl -X POST http://localhost:5001/v1/embeddings -H 'Content-Type: application/json' -d "{\\"input\\": [\\"some text\\",\\"some more interesting text\\",\\"additional context\\"]}"
 
 
 response schema mimics open ai ada .. with added multi input and multi output as list 
