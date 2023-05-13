@@ -33,10 +33,15 @@ how to start it up
  							/v1/embeddings      to generate embeddings 
 
 building the docker image:
+clone this repositorory and at the top level run
+sudo docker build -t elmo-embedding-api .
 
-docker build -t elmo-embedding-api .
+placing the model:
+downloa the desired model to the ./model/ direcotry and unzip it.
 
-docker run -p 5001:5001 -v ./model:/app/model -v ./logs:/app/logs elmo-embedding-api
+start the container (initial start and call will take few extra seconds):
+sudo docker run -p 5001:5001 -v ./model:/app/model -v ./logs:/app/logs --name elmo-embedding-api peterromanowski/elmo-embedding-api:0.1.4
+
 
 pulling from docker.hub:
 
@@ -70,3 +75,8 @@ response schema mimics open ai ada .. with added multi input and multi output as
   }
 }
 
+
+
+I hope it will help you in your own project. 
+If you do have questions feel free to reach out. 
+Enjoy!
