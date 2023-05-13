@@ -13,7 +13,7 @@
           "version": "1.4"
           "release": "13/05/2023 01:22"
 
-# elmo_embbeding_api
+# elmo_embedding_api
 Drop in replacement for openai ada 
 
 Reason - local is good 
