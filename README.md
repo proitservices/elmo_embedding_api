@@ -32,7 +32,9 @@ how to start it up
  							/ver 	            version info
  							/v1/embeddings      to generate embeddings 
 
-
+building the docker image:
+docker build -t elmo-embedding-api .
+docker run -p 5001:5001 -v ./model:/app/model -v ./logs:/app/logs elmo-embedding-api
 
 example:
 #curl -X POST http://localhost:5001/v1/embeddings -H 'Content-Type: application/json' -d "{\\"input\\": [\\"some text\\",\\"some more interesting text\\",\\"additional context\\"]}"
