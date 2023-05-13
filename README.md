@@ -39,7 +39,7 @@ example:
 
 
 response schema mimics open ai ada .. with added multi input and multi output as list 
-'''json
+```json
 {
   "data": [
     {
@@ -61,4 +61,4 @@ response schema mimics open ai ada .. with added multi input and multi output as
     "total_tokens": 5
   }
 }
-'''
+
