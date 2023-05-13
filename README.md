@@ -40,7 +40,7 @@ docker run -p 5001:5001 -v ./model:/app/model -v ./logs:/app/logs elmo-embedding
 
 pulling from docker.hub:
 
-docker pull peterromanowski/elmo-embedding-api:0.1.4   (use sudo if you get perm issues)
+docker pull peterromanowski/elmo-embedding-api:0.1.4   [nearly ~4GB]   (use sudo if you get perm issues)
 
 example:
 #curl -X POST http://localhost:5001/v1/embeddings -H 'Content-Type: application/json' -d "{\\"input\\": [\\"some text\\",\\"some more interesting text\\",\\"additional context\\"]}"
