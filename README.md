@@ -17,7 +17,7 @@
 Drop in replacement for openai ada 
 
 Reason - local is good 
-limits - you can create a 1024 dimmensional embeddings for your application and only your box is the limit
+limits - you can create a 1024 dimensional embeddings for your application and only your box is the limit
 tested - 9383 tokens in 2min 33 sec on 8 core i7 machine
 
 how to start it up
@@ -33,11 +33,11 @@ how to start it up
  							/v1/embeddings      to generate embeddings 
 
 building the docker image:
-clone this repositorory and at the top level run
+clone this repository and at the top level run
 sudo docker build -t elmo-embedding-api .
 
 placing the model:
-downloa the desired model to the ./model/ direcotry and unzip it.
+Download the desired model to the ./model/directory and unzip it.
 
 start the container (initial start and call will take few extra seconds):
 sudo docker run -p 5001:5001 -v ./model:/app/model -v ./logs:/app/logs --name elmo-embedding-api peterromanowski/elmo-embedding-api:0.1.4
