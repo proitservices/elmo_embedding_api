@@ -16,9 +16,9 @@
 # elmo_embedding_api
 Drop in replacement for openai ada 
 
-Reason - local is good 
-limits - you can create a 1024 dimensional embeddings for your application and only your box is the limit
-tested - 9383 tokens in 2min 33 sec on 8 core i7 machine
+Reason - local is good;  
+limits - you can create a 1024 dimensional embeddings for your application and only your box is the limit; 
+tested - 9383 tokens in 2min 33 sec on 8 core i7 machine; 
 
 how to start it up
 
